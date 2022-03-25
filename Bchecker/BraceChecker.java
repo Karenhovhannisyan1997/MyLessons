@@ -8,7 +8,7 @@ public class BraceChecker {
     }
 
     public void check(){
-        Stack stack = new Stack();
+        Stack<Character> stack = new Stack();
         for (int i = 0; i < text.length(); i++) {
             if(text.charAt(i) == '(' || text.charAt(i) == '[' || text.charAt(i) == '{'){
                 stack.push(i);
